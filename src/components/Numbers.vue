@@ -5,8 +5,8 @@
           <h2>{{ msg }}</h2>
       
           <el-form :inline="true" ref="form" label-width="120px">
-              <el-input-number v-model="num" :min="1" :max="10"></el-input-number>
-              <el-button type="primary" @click="generateTicket()">Generate</el-button>
+              <el-input-number v-model="num" :min="1" :max="10" v-if="!showTickets"></el-input-number>
+              <el-button type="primary" @click="generateTicket()" v-if="!showTickets">Generate</el-button>
               <el-button type="primary" @click="resetTicket()" v-if="showTickets">Reset?</el-button>
           </el-form>
         </el-col>

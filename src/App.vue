@@ -73,6 +73,6 @@ h1,h2,h3 {
 .fade-enter,
 .fade-leave-active {
   opacity: 0;
-  transform: translate(0, 2em);
+  transform: translate(0, -2em);
 }
 </style>
