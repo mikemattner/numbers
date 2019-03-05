@@ -15,7 +15,8 @@
     </el-container>
     <footer>
       <div class="menu">
-        <router-link to="/"><i class="el-icon-view"></i> Generate</router-link>
+        <router-link to="/"><i class="el-icon-location-outline"></i> Home</router-link>
+        <router-link to="/generate"><i class="el-icon-view"></i> Generate</router-link>
         <router-link to="/about"><i class="el-icon-setting"></i> About</router-link>
       </div>
     </footer>
@@ -41,6 +42,7 @@ body {
 }
 h1,h2,h3 {
   color: $midGreen;
+  line-height: 1;
 }
 footer {
   background-color: #fff;
