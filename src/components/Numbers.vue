@@ -71,7 +71,7 @@ export default {
         let rand = this.range(1,70,1);
         this.shuffle(rand);
         let final = rand.splice(5,66);
-        rand.sort();
+        rand.sort((a, b) => a - b);
         this.tickets.push({
           first: rand[0],
           second: rand[1],
