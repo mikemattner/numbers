@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <el-header id="nav">
-          <div class="logo">Numbers</div>
+      <div class="logo"><router-link to="/">Numbers</router-link></div>
     </el-header>
     <el-container>
       <el-main>
@@ -79,7 +79,7 @@ h1,h2,h3 {
   a {
     color: $white;
     margin: 0 1rem;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.065em;
     &.router-link-exact-active {
