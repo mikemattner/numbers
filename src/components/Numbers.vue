@@ -143,7 +143,7 @@ export default {
   }
   .le-tickets {
     margin: 1rem 0;
-    padding: 1rem 0 1rem 30px;
+    padding: 1rem 10px 1rem 30px;
     list-style: none;
     display: flex;
     align-items: center;
@@ -159,7 +159,7 @@ export default {
 
     @include min-media(768px) {
       justify-content: space-around;
-      padding: 0 0 0 40px;
+      padding: 0 10px 0 40px;
       border-left: 3px solid $midGreen;
     }
 
