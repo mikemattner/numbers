@@ -124,7 +124,7 @@ export default {
 
     &--blue {
       background-color: $midGreen;
-      background: linear-gradient(45deg, $midGreen 0%, $dark-blueGreen 100%);
+      background: linear-gradient(135deg, $midGreen 0%, $dark-blueGreen 100%);
       color: $darkGreen;
 
       h2{
