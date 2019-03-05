@@ -1,16 +1,20 @@
 <template>
   <div class="home">
-    <div class="card card--blue">
-        <h4>Welcome</h4>
-        <h1>What is Numbers?</h1>
-        <p>Ever wanted to randomly generate tickets for Mega Millions? Now you can do it quickly and easily!</p>
-    </div>
-    <div class="card">
-        <h4>How to</h4>
-        <h2>Generate tickets</h2>
-        <p>Head over to the generate tab, choose the number, and tap generate. Super simple.</p>
-        <router-link to="/generate" class="btn"><i class="el-icon-view"></i> Generate</router-link>
-    </div>
+    <el-row type="flex" class="row-bg" justify="center">
+        <el-col :xs="24" :md="16" :lg="12">
+            <div class="card card--blue">
+                <h4>Welcome</h4>
+                <h1>What is Numbers?</h1>
+                <p>Ever wanted to randomly generate tickets for Mega Millions? Now you can do it quickly and easily!</p>
+            </div>
+            <div class="card">
+                <h4>How to</h4>
+                <h2>Generate tickets</h2>
+                <p>Head over to the generate tab, choose the number, and tap generate. Super simple.</p>
+                <router-link to="/generate" class="btn"><i class="el-icon-view"></i> Generate</router-link>
+            </div>
+        </el-col>
+    </el-row>
   </div>
 </template>
 

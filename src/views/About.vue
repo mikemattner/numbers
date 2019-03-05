@@ -2,9 +2,14 @@
   <div class="about">
     <el-row type="flex" class="row-bg" justify="center">
         <el-col :xs="24" :md="16" :lg="12">
-            <h1>Credits</h1>
-            <p>Numbers is a simple ticket generator for Mega Millions. Built with Vue, 
-             using the Element UI library. Enjoy it, but use it wisely.</p>
+            <div class="card">
+                <h1>About this app</h1>
+                <p>Numbers is a simple ticket generator for Mega Millions. Built with Vue, 
+                 using the Element UI library. Enjoy it, but use it wisely.</p>
+                <p>Thank you for using <strong>Numbers</strong>! This webapp might or might 
+                not be updated, and I suggest you gamble wisely if you choose to use this app.</p>
+            </div>
+            <h2>App Credits</h2>
             <dl>
                 <dt>Concept</dt>
                 <dd>Mike Mattner</dd>
@@ -20,6 +25,10 @@
              
             <h2>Version History</h2>
             <dl>
+                <dt>3.0</dt>
+                <dd>Converted app from jQuery/php to a Vue powered experience.</dd>
+            </dl>
+            <dl>
                 <dt>2.0</dt>
                 <dd>Web application city.</dd>
             </dl>
@@ -31,9 +40,6 @@
                 <dt>1.0</dt>
                 <dd>First release.</dd>
             </dl>
-             
-            <p class="thanks">Thank you for using <strong>Numbers</strong>! This webapp might or might 
-            not be updated, and I suggest you gamble wisely.</p>
         </el-col>
     </el-row>
   </div>
@@ -52,6 +58,10 @@ export default {
     padding-bottom: 6rem;
     h1{
         margin: 0 0 1rem;
+    }
+    h2 {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
     }
     dl {
         margin: 0 0 1rem;
