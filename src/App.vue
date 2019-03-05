@@ -104,10 +104,15 @@ footer {
       letter-spacing: -0.5px;
 
       i {
-        color: $midGreen;
-        transform: rotate(45deg);
+        color: $white;
+        background: linear-gradient(135deg, $midGreen 0%, $dark-blueGreen 100%);
         margin-right: 0.5rem;
         font-size: 2rem;
+        border-radius: 2px;
+        &:before {
+          display: block;
+          transform: rotate(45deg);
+        }
       }
      }
     .brand-logo__image {
