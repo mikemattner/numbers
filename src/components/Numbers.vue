@@ -1,7 +1,7 @@
 <template>
   <div class="numbers">
       <el-row type="flex" class="row-bg" justify="center">
-          <el-col :xs="24" :md="16" :lg="12" class="card">
+          <el-col :xs="24" :md="16" :lg="12" class="card card--blue">
             <h2>{{ msg }}</h2>
               <el-form :inline="true" ref="form" label-width="120px">
                   <el-input-number v-model="num" :min="1" :max="10"></el-input-number>
@@ -96,6 +96,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '@/assets/scss/utils/_variables.scss';
+@import '@/assets/scss/utils/_mixins.scss';
+
 .numbers {
   padding-bottom: 6rem;
   .form-row {
@@ -104,16 +107,27 @@ export default {
   .el-input-number,
   button {
     margin: 0.5rem;
+    color: $dark-blueGreen;
   }
   .card {
     padding: 2rem;
     border-radius: 2px;
     margin-bottom: 2rem;
     box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+
+    &--blue {
+      background-color: $midGreen;
+      background: linear-gradient(45deg, $midGreen 0%, $dark-blueGreen 100%);
+      color: $darkGreen;
+
+      h2{
+        color: $white;
+      }
+    }
   }
   .le-tickets {
     margin: 1rem 0;
-    padding: 2rem 0;
+    padding: 1rem 0;
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -122,30 +136,58 @@ export default {
     box-shadow: 0 2px 15px rgba(0,0,0,0.05);
     border-radius: 2px;
     transition: all 0.25s ease;
+    overflow: hidden;
+    position: relative;
+    height: 80px;
+
+    @include min-media(768px) {
+      padding: 0 0 0 40px;
+    }
 
     &:hover {
       transform: scale(1.05);
     }
     li {
       padding: 0;
+      margin: 0 1rem;
       font-size: 1em;
-      line-height:50px;
       width: 50px; 
-      border: 1px solid #aaa;
       text-align: center; 
       border-radius: 25px;
+      background-color: $midGreen;
+      color: #fff;
+      
+      @include min-media(768px) {
+        line-height:50px;
+        padding: 0;
+      }
 
       &:last-child {
         font-weight: 700;
       }
 
       &.index {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        top: 0;
+        bottom: 0;
         border: none;
         border-radius: 0;
-        border-right: 1px solid #ccc;
-        width: 20px;
+        padding: 0;
+        margin: 0;
+        width: 30px;
         font-size: 0.75rem;
         font-weight: 700;
+        background-color: $electricGreen;
+        color: $dark-blueGreen;
+
+        @include max-media(768px) {
+          display: none;
+        }
       }
     }
   }
