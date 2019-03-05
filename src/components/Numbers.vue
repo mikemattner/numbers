@@ -21,6 +21,8 @@
       <el-row type="flex" class="row-bg" justify="center" v-if="showTickets">
         <el-col :xs="24" :md="16" :lg="12">
           <div class="ticket-box">
+            <h3>Your Tickets</h3>
+            <p>All randomly generated.</p>
             <div v-for="(item, index) in tickets">
               <ul class="le-tickets">
                 <li class="index">{{ index+1 }}</li>
@@ -102,6 +104,14 @@ export default {
 
 .numbers {
   padding-bottom: 6rem;
+  
+  h3{
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  p {
+    margin-top: 0;
+  }
   .form-row {
     margin: 1rem 0;
   }
@@ -142,14 +152,14 @@ export default {
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #fff;
     box-shadow: 0 2px 15px rgba(0,0,0,0.05);
     border-radius: 2px;
     transition: all 0.25s ease;
     overflow: hidden;
     position: relative;
-    height: 80px;
+    height: 100px;
 
     @include min-media(768px) {
       justify-content: space-around;

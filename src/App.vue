@@ -114,7 +114,7 @@ footer {
       height: 30px;
       margin-right: 0.5rem;
       .circle-shape {
-        fill: $dark-blueGreen;
+        fill: $midGreen;
       }
       .logo-shape {
         fill: $white;

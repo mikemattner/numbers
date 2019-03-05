@@ -44,7 +44,7 @@ export default {
     dl {
         dt {
             font-weight: bold; 
-            color: $electricGreen;
+            color: $midGreen;
             padding: 1em 0 0 0; 
             border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
