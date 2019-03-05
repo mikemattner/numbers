@@ -2,10 +2,6 @@
   <div id="app">
     <el-header id="nav">
           <div class="logo">Numbers</div>
-          <div class="menu">
-            <router-link to="/">Home</router-link>
-            <router-link to="/about">About</router-link>
-          </div>
     </el-header>
     <el-container>
       <el-main>
@@ -14,12 +10,19 @@
         </transition>
       </el-main>
     </el-container>
+    <el-footer>
+      <div class="menu">
+        <router-link to="/">Generate</router-link>
+        <router-link to="/about">About</router-link>
+      </div>
+    </el-footer>
   </div>
 </template>
 
 <style lang="scss">
 @import '@/assets/scss/app.scss';
 @import '@/assets/scss/utils/_variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
 body {
   margin: 0;
   padding: 0;
@@ -37,6 +40,26 @@ body {
 h1,h2,h3 {
   color: $darkBlue;
 }
+.el-footer {
+  background-color: $darkBlue;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  color: $white;
+  a {
+    color: $white;
+    margin: 0 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.065em;
+    &.router-link-exact-active {
+      font-weight: 900;
+    }
+  }
+}
 #nav {
   display: flex;
   justify-content: space-around;
@@ -49,17 +72,18 @@ h1,h2,h3 {
   z-index: 10000;
 
   .logo {
-    font-size: 1rem;
-    text-transform: uppercase;
+    font-size: 1.5rem;
     font-weight: 900;
+    font-family: 'Pacifico', cursive;
   }
   a {
     color: $white;
     margin: 0 1rem;
+    text-transform: uppercase;
     text-decoration: none;
+    letter-spacing: 0.065em;
     &.router-link-exact-active {
-      color: $orange;
-      font-weight: 400;
+      font-weight: 900;
     }
   }
 }
