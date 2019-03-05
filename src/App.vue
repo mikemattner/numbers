@@ -70,7 +70,7 @@ footer {
     text-decoration: none;
     letter-spacing: 0.065em;
     font-size: 0.75rem;
-    color: #aaa;
+    color: #ccc;
 
     i {
       font-size: 2rem;
