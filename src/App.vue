@@ -27,7 +27,6 @@
 <style lang="scss">
 @import '@/assets/scss/app.scss';
 @import '@/assets/scss/utils/_variables.scss';
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
 body {
   margin: 0;
   padding: 0;
@@ -96,16 +95,13 @@ footer {
   
   .logo {
     font-size: 1.5rem;
-    font-weight: 900;
-    font-family: 'Pacifico', cursive;
-
-    span {
-      margin-left: -0.175rem;
-    }
+    font-weight: 700;
+   
      a {
       display: flex;
       justify-content: center;
       align-items: center;
+      letter-spacing: -0.5px;
 
       i {
         color: $midGreen;
