@@ -11,14 +11,8 @@
               </el-form>
           </el-col>
       </el-row>
-      <!-- <el-row type="flex" class="row-bg" justify="center" v-if="showTickets">
-          <el-col :xs="24" :md="16" :lg="12" class="card">
-              <h2>{{ msg }}</h2>
-              <el-button type="primary" @click="resetTicket()">Reset?</el-button>
-          </el-col>
-      </el-row> -->
     <transition name="fade" mode="out-in">
-      <el-row type="flex" class="row-bg" justify="center" v-if="showTickets">
+      <el-row type="flex" class="row-bg" justify="center" v-if="showTickets" :key="showTickets">
         <el-col :xs="24" :md="16" :lg="12">
           <div class="ticket-box">
             <h3>Your Tickets</h3>
@@ -70,6 +64,7 @@ export default {
         return arra1;
     },
     generateTicket() {
+      this.showTickets = false;
       this.tickets = [];
       for (let i = 0; i < this.num; i++) {
         let mega = Math.floor((Math.random() * 25) + 1);
@@ -148,7 +143,7 @@ export default {
   }
   .le-tickets {
     margin: 1rem 0;
-    padding: 1rem 0;
+    padding: 1rem 0 1rem 30px;
     list-style: none;
     display: flex;
     align-items: center;
@@ -160,7 +155,7 @@ export default {
     overflow: hidden;
     position: relative;
     height: 100px;
-    border-left: 6px solid $electricGreen;
+    border-left: 3px solid $midGreen;
 
     @include min-media(768px) {
       justify-content: space-around;
@@ -175,8 +170,8 @@ export default {
       padding: 0;
       margin: 0;
       font-size: 1.25rem;
-      width: 50px;
-      line-height: 50px;
+      width: 40px;
+      line-height: 40px;
       text-align: center; 
       border-radius: 25px;
       background-color: $midGreen;
@@ -214,7 +209,7 @@ export default {
         color: $dark-blueGreen;
 
         @include max-media(768px) {
-          display: none;
+          width: 20px;
         }
       }
     }
