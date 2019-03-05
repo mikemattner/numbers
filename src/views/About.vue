@@ -58,7 +58,7 @@ export default {
 .about {
     padding-bottom: 6rem;
     h1{
-        margin: 0 0 1rem;
+        margin: 1rem 0 1rem;
     }
     h2 {
         margin-top: 2rem;

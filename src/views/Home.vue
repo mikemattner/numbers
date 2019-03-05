@@ -43,8 +43,8 @@ export default {
 
     .illustrated {
         i {
-            color: #ccc;
-            font-size: 3rem;
+            color: $electricGreen;
+            font-size: 2rem;
         }
     }
     h1,
