@@ -2,10 +2,8 @@
   <div id="app">
     <el-header id="nav">
       <div class="logo">
-        <router-link to="/">
+          <span>Numbers</span>
           <i class="el-icon-more"></i>
-          Number<span>s</span>
-        </router-link>
       </div>
     </el-header>
     <el-container>
@@ -96,12 +94,12 @@ footer {
   .logo {
     font-size: 1.5rem;
     font-weight: 700;
-   
-     a {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       letter-spacing: -0.5px;
+      width: 100%;
+      color: $black;
 
       i {
         color: $white;
@@ -113,7 +111,6 @@ footer {
           display: block;
           transform: rotate(45deg);
         }
-      }
      }
     .brand-logo__image {
       width: 30px;
