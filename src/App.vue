@@ -52,7 +52,7 @@ footer {
   align-items: flex-start;
   bottom: 0;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 10px;
   height: 100px;
   border-top: 1px solid #eee;
 
