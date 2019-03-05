@@ -17,7 +17,7 @@
       <div class="menu">
         <router-link to="/"><i class="el-icon-location-outline"></i> Home</router-link>
         <router-link to="/generate"><i class="el-icon-view"></i> Generate</router-link>
-        <router-link to="/about"><i class="el-icon-setting"></i> About</router-link>
+        <router-link to="/about"><i class="el-icon-news"></i> About</router-link>
       </div>
     </footer>
   </div>
@@ -40,8 +40,8 @@ body {
   padding: 0;
   padding-top: 80px !important;
 }
-h1,h2,h3 {
-  color: $midGreen;
+h1,h2,h3,h4 {
+  color: $dark-blueGreen;
   line-height: 1;
 }
 footer {
