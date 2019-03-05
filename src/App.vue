@@ -49,7 +49,7 @@ body {
   padding-top: 80px !important;
 }
 h1,h2,h3 {
-  color: $dark-blueGreen;
+  color: $black;
 }
 footer {
   background-color: #fff;

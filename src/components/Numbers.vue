@@ -2,6 +2,7 @@
   <div class="numbers">
       <el-row type="flex" class="row-bg" justify="center">
           <el-col :xs="24" :md="16" :lg="12" class="card card--blue">
+            <h4>Ticket Generator</h4>
             <h2>{{ msg }}</h2>
               <el-form :inline="true" ref="form" label-width="120px">
                   <el-input-number v-model="num" :min="1" :max="10"></el-input-number>
@@ -123,6 +124,15 @@ export default {
 
       h2{
         color: $white;
+        margin-top: 0;
+      }
+      h4 {
+        color: $white;
+        margin-bottom: 0;
+        font-size: 0.65rem;
+        letter-spacing: 0.0675rem;
+        text-transform: uppercase;
+        font-weight: 700;
       }
     }
   }

@@ -3,15 +3,14 @@
     <el-row type="flex" class="row-bg" justify="center">
         <el-col :xs="24" :md="16" :lg="12" class="card">
           <h1>Credits</h1>
-             <p>This is a simple little ticket generator for Mega Millions. Enjoy it, but use it wisely.</p>
+             <p>Numbers is a simple ticket generator for Mega Millions. Built with Vue, 
+             using the Element UI library. Enjoy it, but use it wisely.</p>
              <dl class="clearfix">
                 <dt>Concept</dt>
                 <dd>Mike Mattner</dd>
                 <dt>Design</dt>
                 <dd>Mike Mattner</dd>
                 <dt>Development</dt>
-                <dd>Mike Mattner</dd>
-                <dt>Egotist</dt>
                 <dd>Mike Mattner</dd>
              </dl>
              
@@ -45,14 +44,14 @@ export default {
     dl {
         dt {
             font-weight: bold; 
-            color: $dark-blueGreen;
+            color: $electricGreen;
             padding: 1em 0 0 0; 
             border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
         dd {
             padding: 0; 
             margin: 0; 
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
     }
 }
