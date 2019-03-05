@@ -61,7 +61,7 @@ h1,h2,h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 1rem;
+    margin: 0 2rem;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.065em;
