@@ -32,7 +32,9 @@ export default {
 
 <style lang="scss">
 @import '@/assets/scss/utils/_variables.scss';
-
+.home {
+    padding-bottom: 6rem;
+}
 .card {
     padding: 2rem;
     border-radius: 4px;
