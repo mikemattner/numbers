@@ -4,7 +4,7 @@
       <div class="logo">
         <router-link to="/">
           <i class="el-icon-more"></i>
-          Numbers
+          Number<span>s</span>
         </router-link>
       </div>
     </el-header>
@@ -98,6 +98,10 @@ footer {
     font-size: 1.5rem;
     font-weight: 900;
     font-family: 'Pacifico', cursive;
+
+    span {
+      margin-left: -0.175rem;
+    }
      a {
       display: flex;
       justify-content: center;
