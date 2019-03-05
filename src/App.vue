@@ -108,7 +108,7 @@ footer {
         background: linear-gradient(135deg, $midGreen 0%, $dark-blueGreen 100%);
         margin-right: 0.5rem;
         font-size: 2rem;
-        border-radius: 2px;
+        border-radius: 4px;
         &:before {
           display: block;
           transform: rotate(45deg);

@@ -30,7 +30,7 @@ export default {
 
 .card {
     padding: 2rem;
-    border-radius: 2px;
+    border-radius: 4px;
     margin-bottom: 2rem;
     box-shadow: 0 2px 15px rgba(0,0,0,0.05);
     h1,
@@ -59,7 +59,7 @@ export default {
     .btn {
         display: inline-block;
         text-decoration: none;
-        color: $midGreen;
+        color: $dark-blueGreen;
         border: 2px solid $midGreen;
         border-radius: 4px;
         padding: 12px 20px;

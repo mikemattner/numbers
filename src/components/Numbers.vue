@@ -123,7 +123,7 @@ export default {
   }
   .card {
     padding: 2rem;
-    border-radius: 2px;
+    border-radius: 4px;
     margin-bottom: 2rem;
     box-shadow: 0 2px 15px rgba(0,0,0,0.05);
 
@@ -155,16 +155,17 @@ export default {
     justify-content: space-around;
     background-color: #fff;
     box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-    border-radius: 2px;
+    border-radius: 4px;
     transition: all 0.25s ease;
     overflow: hidden;
     position: relative;
     height: 100px;
-    border-left: 3px solid $midGreen;
+    border-left: 6px solid $electricGreen;
 
     @include min-media(768px) {
       justify-content: space-around;
       padding: 0 0 0 40px;
+      border-left: 3px solid $midGreen;
     }
 
     &:hover {
