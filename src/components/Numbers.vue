@@ -125,7 +125,7 @@ export default {
     padding: 2rem;
     border-radius: 4px;
     margin-bottom: 2rem;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
 
     &--blue {
       background-color: $midGreen;
@@ -154,7 +154,7 @@ export default {
     align-items: center;
     justify-content: space-around;
     background-color: #fff;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
     border-radius: 4px;
     transition: all 0.25s ease;
     overflow: hidden;

@@ -32,7 +32,7 @@ export default {
     padding: 2rem;
     border-radius: 4px;
     margin-bottom: 2rem;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
     h1,
     h2 {
         margin-top: 0;
