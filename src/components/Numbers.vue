@@ -160,6 +160,7 @@ export default {
     overflow: hidden;
     position: relative;
     height: 100px;
+    border-left: 3px solid $midGreen;
 
     @include min-media(768px) {
       justify-content: space-around;

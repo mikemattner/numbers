@@ -42,7 +42,7 @@ body {
   padding-top: 80px !important;
 }
 h1,h2,h3 {
-  color: $black;
+  color: $midGreen;
 }
 footer {
   background-color: #fff;
