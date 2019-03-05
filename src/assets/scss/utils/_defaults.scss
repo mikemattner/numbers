@@ -51,11 +51,11 @@ h6 {
 }
 
 a {
-    color: $dark-blueGreen;
+    color: $midGreen;
     transition: all 0.25s ease-in-out;
 
     &:hover {
-        color: $darkGreen;
+        color: $midGreen;
     }
 }
 .container,

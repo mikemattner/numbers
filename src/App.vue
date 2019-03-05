@@ -56,9 +56,10 @@ footer {
   position: fixed;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   bottom: 0;
   width: 100%;
+  padding-top: 20px;
   height: 100px;
   border-top: 1px solid #eee;
 
@@ -79,7 +80,7 @@ footer {
     color: #aaa;
 
     i {
-      font-size: 1.25rem;
+      font-size: 2rem;
     }
 
     &.router-link-exact-active {

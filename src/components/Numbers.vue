@@ -108,6 +108,7 @@ export default {
   button {
     margin: 0.5rem;
     color: $dark-blueGreen;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
   }
   .card {
     padding: 2rem;
@@ -130,8 +131,8 @@ export default {
     padding: 1rem 0;
     list-style: none;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
     background-color: #fff;
     box-shadow: 0 2px 15px rgba(0,0,0,0.05);
     border-radius: 2px;
@@ -141,6 +142,7 @@ export default {
     height: 80px;
 
     @include min-media(768px) {
+      justify-content: space-around;
       padding: 0 0 0 40px;
     }
 
@@ -149,16 +151,20 @@ export default {
     }
     li {
       padding: 0;
-      margin: 0 1rem;
-      font-size: 1em;
-      width: 50px; 
+      margin: 0;
+      font-size: 1.25rem;
+      width: 50px;
+      line-height: 50px;
       text-align: center; 
       border-radius: 25px;
       background-color: $midGreen;
       color: #fff;
       
       @include min-media(768px) {
+        font-size: 1rem;
+        width: 50px; 
         line-height:50px;
+        margin: 0 1rem;
         padding: 0;
       }
 
