@@ -3,6 +3,7 @@
     <el-row type="flex" class="row-bg" justify="center">
         <el-col :xs="24" :md="16" :lg="12">
             <div class="card">
+                <div class="illustrated"><i class="el-icon-setting"></i></div>
                 <h1>About this app</h1>
                 <p>Numbers is a simple ticket generator for Mega Millions. Built with Vue, 
                  using the Element UI library. Enjoy it, but use it wisely.</p>

@@ -8,6 +8,7 @@
                 <p>Ever wanted to randomly generate tickets for Mega Millions? Now you can do it quickly and easily!</p>
             </div>
             <div class="card">
+                <div class="illustrated"><i class="el-icon-view"></i></div>
                 <h4>How to</h4>
                 <h2>Generate tickets</h2>
                 <p>Head over to the generate tab, choose the number, and tap generate. Super simple.</p>
@@ -37,6 +38,13 @@ export default {
     border-radius: 4px;
     margin-bottom: 2rem;
     box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+
+    .illustrated {
+        i {
+            color: #ccc;
+            font-size: 3rem;
+        }
+    }
     h1,
     h2 {
         margin-top: 0;
