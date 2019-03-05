@@ -41,16 +41,19 @@ export default {
 
 .about {
     padding-bottom: 6rem;
+    h1{
+        margin: 0 0 1rem;
+    }
     dl {
         margin: 0;
         dt {
             font-weight: bold; 
             color: $midGreen;
-            padding: 0.5rem 0 0 0; 
+            padding: 0; 
             border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
         dd {
-            padding: 0; 
+            padding: 0 0 0.5rem; 
             margin: 0; 
         }
     }
