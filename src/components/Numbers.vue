@@ -20,8 +20,9 @@
       <el-row type="flex" class="row-bg" justify="center" v-if="showTickets">
         <el-col :xs="24" :md="16" :lg="12">
           <div class="ticket-box">
-            <div v-for="item in tickets">
+            <div v-for="(item, index) in tickets">
               <ul class="le-tickets">
+                <li class="index">{{ index+1 }}</li>
                 <li>{{ item.first }}</li>
                 <li>{{ item.second }}</li>
                 <li>{{ item.third }}</li>
@@ -112,7 +113,7 @@ export default {
   }
   .le-tickets {
     margin: 1rem 0;
-    padding: 2rem 1rem;
+    padding: 2rem 0;
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -130,12 +131,21 @@ export default {
       font-size: 1em;
       line-height:50px;
       width: 50px; 
-      border: 1px solid #eee;
+      border: 1px solid #aaa;
       text-align: center; 
       border-radius: 25px;
 
       &:last-child {
-        border-color: #aaa;
+        font-weight: 700;
+      }
+
+      &.index {
+        border: none;
+        border-radius: 0;
+        border-right: 1px solid #ccc;
+        width: 20px;
+        font-size: 0.75rem;
+        font-weight: 700;
       }
     }
   }
