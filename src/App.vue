@@ -12,8 +12,8 @@
     </el-container>
     <el-footer>
       <div class="menu">
-        <router-link to="/">Generate</router-link>
-        <router-link to="/about">About</router-link>
+        <router-link to="/"><i class="el-icon-circle-plus"></i> Generate</router-link>
+        <router-link to="/about"><i class="el-icon-info"></i> About</router-link>
       </div>
     </el-footer>
   </div>
@@ -49,12 +49,28 @@ h1,h2,h3 {
   bottom: 0;
   width: 100%;
   color: $white;
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   a {
     color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 1rem;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.065em;
+    font-size: 0.75rem;
+
+    i {
+      font-size: 1.25rem;
+    }
+
     &.router-link-exact-active {
       font-weight: 900;
     }
@@ -98,5 +114,16 @@ h1,h2,h3 {
 .fade-leave-active {
   opacity: 0;
   transform: translate(0, -2em);
+}
+.simple-fade-enter-active,
+.simple-fade-leave-active {
+  transition-duration: 0.375s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+
+.simple-fade-enter,
+.simple-fade-leave-active {
+  opacity: 0;
 }
 </style>

@@ -1,16 +1,20 @@
 <template>
   <div class="numbers">
-    <el-row type="flex" class="row-bg" justify="center">
-        <el-col :xs="24" :md="16" :lg="12" class="card">
-          <h2>{{ msg }}</h2>
-      
-          <el-form :inline="true" ref="form" label-width="120px">
-              <el-input-number v-model="num" :min="1" :max="10" v-if="!showTickets"></el-input-number>
-              <el-button type="primary" @click="generateTicket()" v-if="!showTickets">Generate</el-button>
-              <el-button type="primary" @click="resetTicket()" v-if="showTickets">Reset?</el-button>
-          </el-form>
-        </el-col>
-    </el-row>
+      <el-row type="flex" class="row-bg" justify="center" v-if="!showTickets">
+          <el-col :xs="24" :md="16" :lg="12" class="card">
+            <h2>{{ msg }}</h2>
+              <el-form :inline="true" ref="form" label-width="120px">
+                  <el-input-number v-model="num" :min="1" :max="10"></el-input-number>
+                  <el-button type="primary" @click="generateTicket()">Generate</el-button>
+              </el-form>
+          </el-col>
+      </el-row>
+      <el-row type="flex" class="row-bg" justify="center" v-if="showTickets">
+          <el-col :xs="24" :md="16" :lg="12" class="card">
+              <h2>{{ msg }}</h2>
+              <el-button type="primary" @click="resetTicket()">Reset?</el-button>
+          </el-col>
+      </el-row>
     <transition name="fade" mode="out-in">
       <el-row type="flex" class="row-bg" justify="center" v-if="showTickets">
         <el-col :xs="24" :md="16" :lg="12">
@@ -95,7 +99,7 @@ export default {
   }
   .el-input-number,
   button {
-    margin: 0 0.5rem;
+    margin: 0.5rem;
   }
   .card {
     padding: 2rem;
