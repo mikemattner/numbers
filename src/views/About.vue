@@ -42,16 +42,16 @@ export default {
 .about {
     padding-bottom: 6rem;
     dl {
+        margin: 0;
         dt {
             font-weight: bold; 
             color: $midGreen;
-            padding: 1em 0 0 0; 
+            padding: 0.5rem 0 0 0; 
             border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
         dd {
             padding: 0; 
             margin: 0; 
-            margin-bottom: 1rem;
         }
     }
 }

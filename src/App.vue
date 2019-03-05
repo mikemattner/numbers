@@ -17,8 +17,8 @@
     </el-container>
     <footer>
       <div class="menu">
-        <router-link to="/"><i class="el-icon-circle-plus"></i> Generate</router-link>
-        <router-link to="/about"><i class="el-icon-info"></i> About</router-link>
+        <router-link to="/"><i class="el-icon-view"></i> Generate</router-link>
+        <router-link to="/about"><i class="el-icon-setting"></i> About</router-link>
       </div>
     </footer>
   </div>
