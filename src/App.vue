@@ -106,6 +106,8 @@ footer {
       i {
         color: $midGreen;
         transform: rotate(45deg);
+        margin-right: 0.5rem;
+        font-size: 2rem;
       }
      }
     .brand-logo__image {
