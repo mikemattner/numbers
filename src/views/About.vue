@@ -3,8 +3,7 @@
     <el-row type="flex" class="row-bg" justify="center">
         <el-col :xs="24" :md="16" :lg="12" class="card">
           <h1>Credits</h1>
-             <p>While this thing is nothing fancy, I did work on it.  It's a simple little ticket
-             generator for Mega Millions. Enjoy it, but wisely.</p>
+             <p>This is a simple little ticket generator for Mega Millions. Enjoy it, but use it wisely.</p>
              <dl class="clearfix">
                 <dt>Concept</dt>
                 <dd>Mike Mattner</dd>
