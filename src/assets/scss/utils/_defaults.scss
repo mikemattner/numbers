@@ -8,7 +8,7 @@ html {
 }
 body {
     background-color: #fff;
-    color: $darkBlue-12;
+    color: $darkBlue-9;
     font-family: $sans-serif-font;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
@@ -18,37 +18,12 @@ body {
 
 h1,
 .hero--header {
-    font-size: 3rem;  
+    font-size: 2rem;  
     letter-spacing: 0.0675rem;
+    margin: 2rem 0;
     
     @include min-media(760px) { 
-        font-size: 4rem;
-    }
-
-    small {
-        display: block;
-        font-family: $sans-serif-font;
-        font-size: 1.25rem;
-        font-weight: 400;
-        color: $darkBlue-9;
-        text-transform: uppercase;
-        margin-bottom: 1.25rem;
-    }
-}
-
-.header--decorator {
-    padding-bottom: 2rem;
-    position:relative;
-
-    &:after {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 3rem;
-        height: 1px;
-        left: 0;
-        bottom: 0;
-        background-color: $orange;
+        font-size: 2.5rem;
     }
 }
 

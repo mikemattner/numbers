@@ -1,7 +1,7 @@
 <template>
   <div class="numbers">
     <el-row type="flex" class="row-bg" justify="center">
-        <el-col :span="12" class="card">
+        <el-col :xs="24" :md="16" :lg="12" class="card">
           <h2>{{ msg }}</h2>
       
           <el-form :inline="true" ref="form" label-width="120px">
@@ -13,7 +13,7 @@
     </el-row>
     <transition name="fade" mode="out-in">
       <el-row type="flex" class="row-bg" justify="center" v-if="showTickets">
-        <el-col :span="12" class="card">
+        <el-col :xs="24" :md="16" :lg="12">
           <div class="ticket-box">
             <div v-for="item in tickets">
               <ul class="le-tickets">
@@ -89,6 +89,7 @@ export default {
 
 <style scoped lang="scss">
 .numbers {
+  padding-bottom: 6rem;
   .form-row {
     margin: 1rem 0;
   }
@@ -97,21 +98,26 @@ export default {
     margin: 0 0.5rem;
   }
   .card {
-    border: 1px solid #eee;
     padding: 2rem;
     border-radius: 2px;
     margin-bottom: 2rem;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
   }
   .le-tickets {
     margin: 1rem 0;
-    padding: 2rem;
+    padding: 2rem 1rem;
     list-style: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid #eee;
+    background-color: #fff;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
     border-radius: 2px;
+    transition: all 0.25s ease;
 
+    &:hover {
+      transform: scale(1.05);
+    }
     li {
       padding: 0;
       font-size: 1em;
