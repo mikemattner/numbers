@@ -176,7 +176,8 @@ export default {
       border-radius: 25px;
       background-color: $midGreen;
       color: #fff;
-      
+      font-weight: 700;
+
       @include min-media(768px) {
         font-size: 1rem;
         width: 50px; 
@@ -186,7 +187,8 @@ export default {
       }
 
       &:last-child {
-        font-weight: 700;
+        background-color: $electricGreen;
+        color: $dark-blueGreen;
       }
 
       &.index {

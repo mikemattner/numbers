@@ -77,7 +77,11 @@ footer {
     }
 
     &.router-link-exact-active {
-      color: $midGreen;
+      color: $dark-blueGreen;
+      font-weight: 700;
+      i {
+        color: $electricGreen;
+      }
     }
   }
 }
