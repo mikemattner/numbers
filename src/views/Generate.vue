@@ -11,6 +11,9 @@ export default {
   name: 'home',
   components: {
     Numbers
+  },
+  beforeCreate() {
+    window.scrollTo(0, 0);
   }
 }
 </script>

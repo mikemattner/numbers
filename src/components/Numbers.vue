@@ -32,6 +32,12 @@
         </el-col>
       </el-row>
     </transition>
+    <el-row type="flex" class="row-bg" justify="center">
+      <el-col :xs="24" :md="16" :lg="12">
+        <p class="disclaimer"><strong>ATTENTION</strong> I am not responsible for your use of these randomly generated numbers. 
+        Have a little fun, but for the love of God, I cannot guarantee success!</p>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
@@ -98,7 +104,6 @@ export default {
 @import '@/assets/scss/utils/_mixins.scss';
 
 .numbers {
-  padding-bottom: 6rem;
   
   h3{
     font-weight: 700;
@@ -106,6 +111,12 @@ export default {
   }
   p {
     margin-top: 0;
+  }
+  .disclaimer {
+    margin-top: 2rem;
+    font-size: 0.675rem;
+    color: #888;
+    text-align: left;
   }
   .form-row {
     margin: 1rem 0;
@@ -141,6 +152,9 @@ export default {
       }
     }
   }
+  .ticket-box {
+    text-align:left;
+  }
   .le-tickets {
     margin: 1rem 0;
     padding: 1rem 10px 1rem 30px;
@@ -156,6 +170,7 @@ export default {
     position: relative;
     height: 100px;
     border-left: 3px solid $midGreen;
+    text-align: center;
 
     @include min-media(768px) {
       justify-content: space-around;

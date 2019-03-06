@@ -142,7 +142,7 @@ footer {
 }
 .fade-enter-active,
 .fade-leave-active {
-  transition-duration: 0.375s;
+  transition-duration: 0.25s;
   transition-property: all;
   transition-timing-function: ease-in-out;
 }

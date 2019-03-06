@@ -10,8 +10,8 @@ const router = new Router({
   routes: defaultRoutes
 });
 
-router.afterEach(function (to, from) {
-  window.scrollTo(0, 0);
-});
+// router.afterEach(function (to, from) {
+//   window.scrollTo(0, 0);
+// });
 
 export default router;

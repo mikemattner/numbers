@@ -52,6 +52,9 @@
 <script>
 export default {
   name: 'About',
+  beforeCreate() {
+    window.scrollTo(0, 0);
+  }
 }
 </script>
 
