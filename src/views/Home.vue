@@ -19,6 +19,17 @@
                 <p>Head over to the generate tab, choose the number, and tap generate. Super simple.</p>
                 <router-link to="/generate" class="btn">Generate</router-link>
             </div>
+            <div class="card card--left">
+                <div class="card--header">
+                    <div class="illustrated"><i class="el-icon-news"></i></div>
+                    <div class="headline">
+                        <h4>About</h4>
+                        <h2>This Web App</h2>
+                    </div>
+                </div>
+                <p>What is this thing, and why does it exist? Find out more than you wanted to know.</p>
+                <router-link to="/about" class="btn">About</router-link>
+            </div>
         </el-col>
     </el-row>
   </div>
@@ -45,13 +56,8 @@ export default {
     border-radius: 4px;
     margin-bottom: 2rem;
     box-shadow: 0 2px 15px rgba(0,0,0,0.1);
-
-    .illustrated {
-        i {
-            color: $electricGreen;
-            font-size: 2.5rem;
-        }
-    }
+    text-align: center;
+    
     h1,
     h2 {
         margin-top: 0;
@@ -81,6 +87,22 @@ export default {
             }
         }
     }
+    .illustrated {
+            border-radius: 30px;
+            background-color: $electricGreen;
+            line-height: 60px;
+            height: 60px;
+            width: 60px;
+            text-align:center;
+            margin: 0 auto;
+
+            i {
+                line-height: 60px;
+                text-align:center;
+                color: $dark-blueGreen;
+                font-size: 2.5rem;
+            }
+        }
     &--left {
         text-align: left;
     }
@@ -94,13 +116,13 @@ export default {
         }
 
         .illustrated {
-            border-radius: 50%;
+            border-radius: 20px;
             background-color: $electricGreen;
             line-height: 40px;
             height: 40px;
             width: 40px;
             text-align:center;
-            margin-right: 1rem;
+            margin: 0 1rem 0 0;
 
             i {
                 font-size: 2rem;

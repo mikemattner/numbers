@@ -3,44 +3,47 @@
     <el-row type="flex" class="row-bg" justify="center">
         <el-col :xs="24" :md="16" :lg="12">
             <div class="card">
-                <div class="illustrated"><i class="el-icon-news"></i></div>
-                <h1>About this app</h1>
-                <p>Numbers is a simple ticket generator for Mega Millions. Built with Vue, 
-                 using the Element UI library.</p>
-                <p>This webapp might or might not be updated, and I suggest you gamble wisely 
-                    if you choose to use this app. Thank you for using <strong>Numbers</strong>!</p>
+                    <div class="illustrated"><i class="el-icon-news"></i></div>
+                        <h4>About</h4>
+                        <h1>This Web App</h1>
+                <p>Numbers is a simple little random ticket generator for Mega Millions. I built it quickly with Vue, 
+                 using the Element UI library, and it is currently hosted on Netlify.</p>
+                <p>The real question is, &ldquo;is this entirely necessary?&rdquo; It is such a simple app and concept,
+                 with very few real technical challenges, it just seemed like a good way to get started with Vue development.</p>
             </div>
             <h2>App Credits</h2>
             <dl>
-                <dt>Concept</dt>
-                <dd>Mike Mattner</dd>
+                <dt>Initial Concept</dt>
+                <dd>Mike Mattner &mdash; though I had initially hoped to use statistical analysis to generate numbers.</dd>
             </dl>
             <dl>
-                <dt>Design</dt>
-                <dd>Mike Mattner</dd>
+                <dt>Mediocre Design</dt>
+                <dd>Mike Mattner &mdash; oh, look. Another brightly colored, light app.</dd>
             </dl>
             <dl>
-                <dt>Development</dt>
-                <dd>Mike Mattner</dd>
+                <dt>Hacked Together Development</dt>
+                <dd>Mike Mattner &mdash; ¯\_(ツ)_/¯</dd>
             </dl>
              
             <h2>Version History</h2>
             <dl>
-                <dt>3.0</dt>
-                <dd>Converted app from jQuery/php to a Vue powered experience.</dd>
+                <dt>3.0 &mdash; March 2019</dt>
+                <dd>Converted app from jQuery/php to a Vue framework, further simplifying the build experience. Why? Because I wanted to keep learning Vue.</dd>
             </dl>
             <dl>
-                <dt>2.0</dt>
-                <dd>Web application city.</dd>
+                <dt>2.0 &mdash; June 2012</dt>
+                <dd>Converted to a jQuery powered single page app. It had animations!</dd>
             </dl>
             <dl>
-                <dt>1.5</dt>
-                <dd>Simplified interface and purpose.</dd>
+                <dt>1.5 &mdash; January 2012</dt>
+                <dd>Simplified interface and purpose. Removed number analysis. Why bother?</dd>
             </dl>
             <dl>
-                <dt>1.0</dt>
-                <dd>First release.</dd>
+                <dt>1.0 &mdash; November 2011</dt>
+                <dd>First release. PHP based to the core. Analyzed previous winning numbers to suss out a pattern. Found no pattern.</dd>
             </dl>
+            
+            <p>Thank you for using <strong>Numbers</strong>!</p>
         </el-col>
     </el-row>
   </div>
@@ -57,9 +60,8 @@ export default {
 
 .about {
     padding-bottom: 6rem;
-    h1{
-        margin: 1rem 0 1rem;
-    }
+    text-align: left;
+    
     h2 {
         margin-top: 2rem;
         margin-bottom: 1rem;
