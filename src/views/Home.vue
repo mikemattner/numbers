@@ -8,10 +8,14 @@
                 <h1>What is Numbers?</h1>
                 <p>Ever wanted to randomly generate tickets for Mega Millions? Now you can do it quickly and easily!</p>
             </div>
-            <div class="card">
-                <div class="illustrated"><i class="el-icon-view"></i></div>
-                <h4>How to</h4>
-                <h2>Generate tickets</h2>
+            <div class="card card--left">
+                <div class="card--header">
+                    <div class="illustrated"><i class="el-icon-view"></i></div>
+                    <div class="headline">
+                        <h4>How to</h4>
+                        <h2>Generate tickets</h2>
+                    </div>
+                </div>
                 <p>Head over to the generate tab, choose the number, and tap generate. Super simple.</p>
                 <router-link to="/generate" class="btn">Generate</router-link>
             </div>
@@ -74,6 +78,34 @@ export default {
             i {
                 color: $white;
                 font-size: 2.5rem;
+            }
+        }
+    }
+    &--left {
+        text-align: left;
+    }
+    &--header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        h4 {
+            margin-top: 0;
+        }
+
+        .illustrated {
+            border-radius: 50%;
+            background-color: #f3f3f3;
+            line-height: 40px;
+            height: 40px;
+            width: 40px;
+            text-align:center;
+            margin-right: 1rem;
+
+            i {
+                font-size: 2rem;
+                line-height: 40px;
+                text-align:center;
             }
         }
     }

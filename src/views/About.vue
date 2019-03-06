@@ -6,9 +6,9 @@
                 <div class="illustrated"><i class="el-icon-news"></i></div>
                 <h1>About this app</h1>
                 <p>Numbers is a simple ticket generator for Mega Millions. Built with Vue, 
-                 using the Element UI library. Enjoy it, but use it wisely.</p>
-                <p>Thank you for using <strong>Numbers</strong>! This webapp might or might 
-                not be updated, and I suggest you gamble wisely if you choose to use this app.</p>
+                 using the Element UI library.</p>
+                <p>This webapp might or might not be updated, and I suggest you gamble wisely 
+                    if you choose to use this app. Thank you for using <strong>Numbers</strong>!</p>
             </div>
             <h2>App Credits</h2>
             <dl>
