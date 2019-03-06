@@ -1,29 +1,17 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import Home from '@/views/Home.vue'
-import Generate from '@/views/Generate.vue'
-import About from '@/views/About.vue'
+import Vue from 'vue';
+import Router from 'vue-router';
+import defaultRoutes from './routes';
 
-Vue.use(Router)
+Vue.use(Router);
 
-export default new Router({
+const router = new Router({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: Home
-    },
-    {
-      path: '/generate',
-      name: 'generate',
-      component: Generate
-    },
-    {
-      path: '/about',
-      name: 'about',
-      component: About
-    }
-  ]
-})
+  routes: defaultRoutes
+});
+
+router.afterEach(function (to, from) {
+  window.scrollTo(0, 0);
+});
+
+export default router;
