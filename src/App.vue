@@ -53,7 +53,7 @@ footer {
   bottom: 0;
   width: 100%;
   padding-top: 10px;
-  height: 100px;
+  height: 80px;
   border-top: 1px solid #eee;
 
   .menu {

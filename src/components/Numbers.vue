@@ -5,9 +5,9 @@
             <h4>Ticket Generator</h4>
             <h2>{{ msg }}</h2>
               <el-form :inline="true" ref="form" label-width="120px">
-                  <el-input-number v-model="num" :min="1" :max="20"></el-input-number>
-                  <el-button type="primary" @click="generateTicket()"><i class="el-icon-circle-plus-outline"></i> Generate</el-button>
-                  <el-button type="primary" @click="resetTicket()"><i class="el-icon-refresh"></i> Reset</el-button>
+                  <el-input-number v-model="num" :min="1" :max="20" v-if="!showTickets"></el-input-number>
+                  <el-button type="primary" @click="generateTicket()" v-if="!showTickets"><i class="el-icon-circle-plus-outline"></i> Generate</el-button>
+                  <el-button type="primary" @click="resetTicket()" v-if="showTickets"><i class="el-icon-refresh"></i> Reset</el-button>
               </el-form>
           </el-col>
       </el-row>
@@ -70,7 +70,7 @@ export default {
         let mega = Math.floor((Math.random() * 25) + 1);
         let rand = this.range(1,70,1);
         this.shuffle(rand);
-        let final = rand.splice(5,66);
+        rand.splice(5,66);
         rand.sort((a, b) => a - b);
         this.tickets.push({
           first: rand[0],

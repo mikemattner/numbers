@@ -3,6 +3,7 @@
     <el-row type="flex" class="row-bg" justify="center">
         <el-col :xs="24" :md="16" :lg="12">
             <div class="card card--blue">
+                <div class="illustrated"><i class="el-icon-location-outline"></i></div>
                 <h4>Welcome</h4>
                 <h1>What is Numbers?</h1>
                 <p>Ever wanted to randomly generate tickets for Mega Millions? Now you can do it quickly and easily!</p>
@@ -12,7 +13,7 @@
                 <h4>How to</h4>
                 <h2>Generate tickets</h2>
                 <p>Head over to the generate tab, choose the number, and tap generate. Super simple.</p>
-                <router-link to="/generate" class="btn"><i class="el-icon-view"></i> Generate</router-link>
+                <router-link to="/generate" class="btn">Generate</router-link>
             </div>
         </el-col>
     </el-row>
@@ -44,7 +45,7 @@ export default {
     .illustrated {
         i {
             color: $electricGreen;
-            font-size: 2rem;
+            font-size: 2.5rem;
         }
     }
     h1,
@@ -68,6 +69,12 @@ export default {
         h2,
         h4 {
             color: $white;
+        }
+        .illustrated {
+            i {
+                color: $white;
+                font-size: 2.5rem;
+            }
         }
     }
     .btn {
