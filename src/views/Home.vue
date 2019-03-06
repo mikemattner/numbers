@@ -95,7 +95,7 @@ export default {
 
         .illustrated {
             border-radius: 50%;
-            background-color: #f3f3f3;
+            background-color: $electricGreen;
             line-height: 40px;
             height: 40px;
             width: 40px;
@@ -106,6 +106,7 @@ export default {
                 font-size: 2rem;
                 line-height: 40px;
                 text-align:center;
+                color: $dark-blueGreen;
             }
         }
     }
