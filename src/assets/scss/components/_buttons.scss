@@ -6,11 +6,13 @@
     border-radius: 4px;
     padding: 12px 20px;
     line-height: 1;
+    box-shadow: 0 0 5px rgba(0,0,0,0.0);
 
     &:hover,
     &:active {
         color: $dark-blueGreen;
         background-color: $electricGreen;
+        box-shadow: 0 2px 15px rgba(0,0,0,0.1);
     }
 
     &--white {

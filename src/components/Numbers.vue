@@ -146,6 +146,11 @@ export default {
     margin: 0.5rem;
     color: $dark-blueGreen;
     box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    font-size: 1rem;
+    &:hover,
+    &:active {
+        box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    }
   }
   .ticket-box {
     text-align:left;
