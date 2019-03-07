@@ -81,6 +81,7 @@ export default {
   &--not-top {
     .headerbar {  
       height: 40px;
+
       .logo {
         font-size: 1rem;
 
