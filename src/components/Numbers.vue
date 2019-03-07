@@ -24,7 +24,8 @@
             <p>All randomly generated.</p>
             <n-ticket v-for="(item, index) in tickets"
               :index="index+1"
-              :item="item"/>
+              :item="item"
+              :key="index"/>
           </div>
         </el-col>
       </el-row>
