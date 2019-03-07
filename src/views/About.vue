@@ -47,6 +47,8 @@
             </dl>
             
             <p>Thank you for using <strong>Numbers</strong>!</p>
+
+            <p class="disclaimer">&copy; {{ year }} Mike Mattner. All rights reserved, but if you'd like to make a copy, let's talk!</p>
         </el-col>
     </el-row>
   </div>
@@ -55,6 +57,11 @@
 <script>
 export default {
   name: 'About',
+  computed: {
+    year () {
+      return new Date().getFullYear();
+    }
+  },
   beforeCreate() {
     window.scrollTo(0, 0);
   }

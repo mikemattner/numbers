@@ -1,5 +1,6 @@
 import Home from '@/views/Home.vue';
 import Generate from '@/views/Generate.vue';
+import Favorites from '@/views/Favorites.vue';
 import About from '@/views/About.vue';
 
 const routes = [
@@ -7,7 +8,8 @@ const routes = [
       path: '/',
       name: 'home',
       component: Home,
-      meta: { 
+      meta: {
+        title: 'Home', 
         layout: 'default',
       },
     },
@@ -16,6 +18,16 @@ const routes = [
       name: 'generate',
       component: Generate,
       meta: { 
+        title: 'Generate', 
+        layout: 'default',
+      },
+    },
+    {
+      path: '/favorites',
+      name: 'favorites',
+      component: Favorites,
+      meta: { 
+        title: 'Favorites', 
         layout: 'default',
       },
     },
@@ -24,6 +36,7 @@ const routes = [
       name: 'about',
       component: About,
       meta: { 
+        title: 'About', 
         layout: 'default',
       },
     }

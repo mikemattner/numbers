@@ -137,9 +137,6 @@ export default {
   }
   .disclaimer {
     margin-top: 2rem;
-    font-size: 0.675rem;
-    color: #888;
-    text-align: left;
   }
   .form-row {
     margin: 1rem 0;
