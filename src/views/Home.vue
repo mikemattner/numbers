@@ -23,13 +23,14 @@
             </n-card>
             <n-card
                 icon="el-icon-news"
-                isLeft>
+                isLeft
+                isBlue>
                 <template v-slot:header>
                     <h4>About</h4>
                     <h2>This Web App</h2>
                 </template>
                 <p>What is this thing, and why does it exist? Find out more than you wanted to know.</p>
-                <router-link to="/about" class="btn">About</router-link>
+                <router-link to="/about" class="btn btn--white">About</router-link>
             </n-card>
         </el-col>
     </el-row>

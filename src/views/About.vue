@@ -3,7 +3,8 @@
     <el-row type="flex" class="row-bg" justify="center">
         <el-col :xs="24" :md="16" :lg="12">
             <n-card
-                icon="el-icon-news">
+                icon="el-icon-news"
+                isBlue>
                 <template v-slot:header>
                     <h4>About</h4>
                     <h1>This Web App</h1>

@@ -108,14 +108,5 @@ export default {
             }
         }
     }
-    .btn {
-        display: inline-block;
-        text-decoration: none;
-        color: $dark-blueGreen;
-        border: 2px solid $electricGreen;
-        border-radius: 4px;
-        padding: 12px 20px;
-        line-height: 1;
-    }
 }
 </style>
