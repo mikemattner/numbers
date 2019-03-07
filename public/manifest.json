@@ -4,10 +4,9 @@
   "start_url": "/",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
-  "icons": [
-  {
+  "icons": [{
     "src": "icons/icon-ios-60@3x.png",
     "sizes": "180x180",
     "type": "image/png"
-  }
+  }]
 }
