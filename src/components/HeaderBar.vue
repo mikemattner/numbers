@@ -48,15 +48,19 @@ export default {
       width: 100%;
       color: $black;
       transition: all 0.25s ease-in-out;
+      overflow: visible;
 
       i {
         color: $white;
         background: linear-gradient(135deg, $midGreen 0%, $dark-blueGreen 100%);
-        margin-right: 0.5rem;
         font-size: 2rem;
         border-radius: 4px;
         transition: all 0.25s ease-in-out;
-
+        display: block;
+        width: 40px;
+        height: 40px;
+        overflow: visible;
+        
         &:before {
           display: block;
           transform: rotate(45deg);
@@ -81,6 +85,8 @@ export default {
 
         i {
           font-size: 1.25rem;
+          width: 25px;
+          height: 25px;
         }
       }
     }
