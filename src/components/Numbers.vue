@@ -53,8 +53,8 @@ export default {
     return {
       msg: 'How many tickets?',
       num: 1,
-      showTickets: false,
-      tickets: [],
+      showTickets: this.$store.state.showTickets,
+      tickets: this.$store.state.tickets,
     }
   },
   methods: {
@@ -94,11 +94,30 @@ export default {
       }
       this.showTickets = true;
       this.msg = 'Generated ' + this.num + ' ticket(s)';
+      let payload = {
+        "tickets": this.tickets,
+        "showTickets": this.showTickets
+      }
+      this.setTicketState(payload);
     },
     resetTicket() {
       this.msg = 'How many tickets?';
       this.showTickets = false;
       this.num = 1;
+      let payload = {
+        "tickets": [],
+        "showTickets": this.showTickets
+      }
+      this.setTicketState(payload);
+    },
+    setTicketState(payload) {
+      this.$store.dispatch('tickets', payload)
+        .then(() => {
+          console.log(payload);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
     },
   }
 }
