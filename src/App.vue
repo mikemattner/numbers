@@ -1,27 +1,28 @@
 <template>
   <div id="app">
-    <el-header id="nav">
-      <div class="logo">
-          <span>Numbers</span>
-          <i class="el-icon-more"></i>
-      </div>
-    </el-header>
-    <el-container>
-      <el-main>
-        <transition name="fade" mode="out-in">
-          <router-view/>
-        </transition>
-      </el-main>
-    </el-container>
-    <footer>
-      <div class="menu">
-        <router-link to="/"><i class="el-icon-location-outline"></i> Home</router-link>
-        <router-link to="/generate"><i class="el-icon-view"></i> Generate</router-link>
-        <router-link to="/about"><i class="el-icon-news"></i> About</router-link>
-      </div>
-    </footer>
+    <component :is="layout">
+      <el-container>
+        <el-main>
+          <transition name="fade" mode="out-in">
+            <router-view/>
+          </transition>
+        </el-main>
+      </el-container>
+    </component>
   </div>
 </template>
+
+<script>
+const default_layout = "default";
+
+export default {
+  computed: {
+    layout() {
+      return (this.$route.meta.layout || default_layout) + '-layout';
+    }
+  },
+};
+</script>
 
 <style lang="scss">
 @import '@/assets/scss/app.scss';
@@ -44,102 +45,7 @@ h1,h2,h3,h4 {
   color: $dark-blueGreen;
   line-height: 1;
 }
-footer {
-  background-color: #fff;
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  bottom: 0;
-  width: 100%;
-  padding-top: 10px;
-  height: 80px;
-  border-top: 1px solid #eee;
 
-  .menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 2rem;
-    text-decoration: none;
-    letter-spacing: 0.065em;
-    font-size: 0.75rem;
-    color: #ccc;
-
-    i {
-      font-size: 2rem;
-    }
-
-    &.router-link-exact-active {
-      color: $dark-blueGreen;
-      font-weight: 700;
-      i {
-        color: $electricGreen;
-      }
-    }
-  }
-}
-#nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: $white;
-  color: $midGreen;
-  font-size: 0.75rem;
-  position: fixed;
-  width: 100%;
-  z-index: 10000;
-  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      letter-spacing: -0.5px;
-      width: 100%;
-      color: $black;
-
-      i {
-        color: $white;
-        background: linear-gradient(135deg, $midGreen 0%, $dark-blueGreen 100%);
-        margin-right: 0.5rem;
-        font-size: 2rem;
-        border-radius: 4px;
-        &:before {
-          display: block;
-          transform: rotate(45deg);
-        }
-     }
-    .brand-logo__image {
-      width: 30px;
-      height: 30px;
-      margin-right: 0.5rem;
-      .circle-shape {
-        fill: $midGreen;
-      }
-      .logo-shape {
-        fill: $white;
-      }
-    }
-  }
-  a {
-    color: $black;
-    margin: 0 1rem;
-    text-decoration: none;
-    letter-spacing: 0.065em;
-    &.router-link-exact-active {
-      color: $black;
-    }
-  }
-}
 .fade-enter-active,
 .fade-leave-active {
   transition-duration: 0.25s;

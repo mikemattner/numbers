@@ -1,14 +1,19 @@
 <template>
   <div class="numbers">
       <el-row type="flex" class="row-bg" justify="center">
-          <el-col :xs="24" :md="16" :lg="12" class="card card--blue">
-            <h4>Ticket Generator</h4>
-            <h2>{{ msg }}</h2>
-              <el-form :inline="true" ref="form" label-width="120px">
+          <el-col :xs="24" :md="16" :lg="12">
+            <n-card
+                isBlue>
+                <template v-slot:header>
+                    <h4>Ticket Generator</h4>
+                    <h2>{{ msg }}</h2>
+                </template>
+                <el-form :inline="true" ref="form" label-width="120px">
                   <el-input-number v-model="num" :min="1" :max="20" v-if="!showTickets"></el-input-number>
                   <el-button type="primary" @click="generateTicket()" v-if="!showTickets"><i class="el-icon-circle-plus-outline"></i> Generate</el-button>
                   <el-button type="primary" @click="resetTicket()" v-if="showTickets"><i class="el-icon-refresh"></i> Reset</el-button>
-              </el-form>
+                </el-form>
+            </n-card>
           </el-col>
       </el-row>
     <transition name="fade" mode="out-in">
@@ -104,7 +109,6 @@ export default {
 @import '@/assets/scss/utils/_mixins.scss';
 
 .numbers {
-  
   h3{
     font-weight: 700;
     margin-bottom: 0;
@@ -126,31 +130,6 @@ export default {
     margin: 0.5rem;
     color: $dark-blueGreen;
     box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-  }
-  .card {
-    padding: 2rem;
-    border-radius: 4px;
-    margin-bottom: 2rem;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
-
-    &--blue {
-      background-color: $midGreen;
-      background: linear-gradient(135deg, $midGreen 0%, $dark-blueGreen 100%);
-      color: $darkGreen;
-
-      h2{
-        color: $white;
-        margin-top: 0;
-      }
-      h4 {
-        color: $white;
-        margin-bottom: 0;
-        font-size: 0.65rem;
-        letter-spacing: 0.0675rem;
-        text-transform: uppercase;
-        font-weight: 700;
-      }
-    }
   }
   .ticket-box {
     text-align:left;

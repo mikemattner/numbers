@@ -6,17 +6,26 @@ const routes = [
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Home,
+      meta: { 
+        layout: 'default',
+      },
     },
     {
       path: '/generate',
       name: 'generate',
-      component: Generate
+      component: Generate,
+      meta: { 
+        layout: 'default',
+      },
     },
     {
       path: '/about',
       name: 'about',
-      component: About
+      component: About,
+      meta: { 
+        layout: 'default',
+      },
     }
 ];
 

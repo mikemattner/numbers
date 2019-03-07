@@ -2,15 +2,17 @@
   <div class="about">
     <el-row type="flex" class="row-bg" justify="center">
         <el-col :xs="24" :md="16" :lg="12">
-            <div class="card">
-                    <div class="illustrated"><i class="el-icon-news"></i></div>
-                        <h4>About</h4>
-                        <h1>This Web App</h1>
+            <n-card
+                icon="el-icon-news">
+                <template v-slot:header>
+                    <h4>About</h4>
+                    <h1>This Web App</h1>
+                </template>
                 <p>Numbers is a simple little random ticket generator for Mega Millions. I built it quickly with Vue, 
                  using the Element UI library, and it is currently hosted on Netlify.</p>
                 <p>The real question is, &ldquo;is this entirely necessary?&rdquo; It is such a simple app and concept,
                  with very few real technical challenges, it just seemed like a good way to get started with Vue development.</p>
-            </div>
+            </n-card>
             <h2>App Credits</h2>
             <dl>
                 <dt>Initial Concept</dt>
