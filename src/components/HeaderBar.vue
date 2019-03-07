@@ -59,6 +59,7 @@ export default {
         display: block;
         width: 40px;
         height: 40px;
+        line-height: 40px;
         overflow: visible;
         
         &:before {
@@ -87,6 +88,7 @@ export default {
           font-size: 1.25rem;
           width: 25px;
           height: 25px;
+          line-height: 25px;
         }
       }
     }

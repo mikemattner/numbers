@@ -31,23 +31,26 @@ footer {
   border-top: 1px solid #eee;
 
   .menu {
+    width: 100%;
+    max-width: 60rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
   }
   a {
+    width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 1rem;
+    text-align: center;
     text-decoration: none;
     letter-spacing: 0.065em;
     font-size: 0.75rem;
     color: #ccc;
 
     i {
-      font-size: 2rem;
+      font-size: 1.75rem;
     }
 
     &.router-link-exact-active {
