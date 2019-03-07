@@ -27,7 +27,7 @@ export default {
 @import '@/assets/scss/utils/_variables.scss';
 
 .card {
-    padding: 2rem;
+    padding: 1.75rem;
     border-radius: 4px;
     margin-bottom: 2rem;
     box-shadow: 0 2px 15px rgba(0,0,0,0.1);
