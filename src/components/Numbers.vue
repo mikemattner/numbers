@@ -46,8 +46,10 @@ export default {
     return {
       msg: 'How many tickets?',
       num: 1,
-      showTickets: this.$store.state.showTickets,
-      tickets: this.$store.state.tickets,
+      showTickets: false,
+      tickets: [],
+      // showTickets: this.$store.state.showTickets,
+      // tickets: this.$store.state.tickets,
     }
   },
   methods: {
@@ -92,7 +94,7 @@ export default {
         "tickets": this.tickets,
         "showTickets": this.showTickets
       }
-      this.setTicketState(payload);
+      // this.setTicketState(payload);
     },
     resetTicket() {
       this.msg = 'How many tickets?';
