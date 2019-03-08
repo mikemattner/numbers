@@ -104,7 +104,7 @@ export default {
         "tickets": [],
         "showTickets": this.showTickets
       }
-      this.setTicketState(payload);
+      // this.setTicketState(payload);
     },
     setTicketState(payload) {
       this.$store.dispatch('tickets', payload)

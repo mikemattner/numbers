@@ -9,7 +9,6 @@
             <h4>Your</h4>
             <h1>Favorites</h1>
           </template>
-          <p>Ticket combinations you're saving for later.</p>
         </n-card>
       </el-col>
     </el-row>
@@ -18,10 +17,10 @@
           <div class="ticket-box">
             <h3>Your Favorites</h3>
             <p>Blasts from the past.</p>
-            <n-ticket v-for="(ticket, index) in tickets"
+            <n-ticket v-for="(favorite, index) in favorites"
               :index="index+1"
-              :item="ticket"
-              :key="tickets.indexOf(ticket)"/>
+              :item="favorite"
+              :key="favorites.indexOf(favorite)"/>
           </div>
         </el-col>
     </el-row>
@@ -33,7 +32,7 @@ export default {
   name: 'favorites',
   data() {
     return {
-      tickets: this.$store.state.favorites,
+      favorites: this.$store.state.favorites,
     }
   },
   beforeCreate() {
