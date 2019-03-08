@@ -16,21 +16,30 @@
                 isLeft>
                 <template v-slot:header>
                     <h4>How to</h4>
-                    <h2>Generate tickets</h2>
+                    <h2>Generate Tickets</h2>
                 </template>
                 <p>Head over to the generate tab, choose the number, and tap generate. Super simple.</p>
                 <router-link to="/generate" class="btn">Generate</router-link>
             </n-card>
             <n-card
-                icon="el-icon-news"
-                isLeft
-                isBlue>
+                icon="el-icon-star-off"
+                isLeft>
                 <template v-slot:header>
-                    <h4>About</h4>
-                    <h2>This Web App</h2>
+                    <h4>Your</h4>
+                    <h2>Favorites</h2>
+                </template>
+                <p>If you tap the star on a generated ticket, that will save it to your favorites for later access.</p>
+                <router-link to="/favorites" class="btn">Favorites</router-link>
+            </n-card>
+            <n-card
+                icon="el-icon-news"
+                isLeft>
+                <template v-slot:header>
+                    <h4>About This</h4>
+                    <h2>Web App</h2>
                 </template>
                 <p>What is this thing, and why does it exist? Find out more than you wanted to know.</p>
-                <router-link to="/about" class="btn btn--white">About</router-link>
+                <router-link to="/about" class="btn">About</router-link>
             </n-card>
         </el-col>
     </el-row>
