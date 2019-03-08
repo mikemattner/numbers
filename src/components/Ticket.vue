@@ -39,12 +39,23 @@ export default {
             }
         },
         addToFavorites() {
-            this.favorites.push(this.item);
+            this.favorites.indexOf(this.item) === -1 ? this.favorites.push(this.item) : this.open("You've already favorited this item", "Error");
             this.saveFavorites();
         },
         removeFromFavorites(favorite) {
             this.favorites.splice(this.favorites.indexOf(favorite), 1);
             this.saveFavorites();
+        },
+        open(message, title) {
+            this.$alert(message, title, {
+              confirmButtonText: 'OK',
+              callback: action => {
+                this.$message({
+                  type: 'info',
+                  message: `action: ${ action }`
+                });
+              }
+            });
         },
         saveFavorites() {
             this.$store.dispatch('saveFavorites', this.favorites)
