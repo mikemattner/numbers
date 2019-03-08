@@ -6,8 +6,8 @@
                 icon="el-icon-location-outline"
                 isBlue>
                 <template v-slot:header>
-                    <h4>Welcome</h4>
-                    <h1>What is Numbers?</h1>
+                    <h4>What is</h4>
+                    <h1>Numbers?</h1>
                 </template>
                 <p>Ever wanted to randomly generate tickets for Mega Millions? Now you can do it quickly and easily!</p>
             </n-card>

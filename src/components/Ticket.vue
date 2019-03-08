@@ -103,7 +103,7 @@ export default {
         }
         li {
           padding: 0;
-          margin: 1rem 0 0;
+          margin: 0;
           font-size: 1.25rem;
           width: 40px;
           line-height: 40px;

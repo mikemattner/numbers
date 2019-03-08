@@ -5,9 +5,13 @@
         <n-card
           icon="el-icon-star-off"
           isBlue>
-          <template v-slot:header>
-            <h4>Your</h4>
-            <h1>Favorites</h1>
+          <template  v-if="favorites.length > 0" v-slot:header>
+            <h4>Your Favorite</h4>
+            <h1>Tickets</h1>
+          </template>
+          <template  v-else v-slot:header>
+            <h4>No Favorites</h4>
+            <h1>Available</h1>
           </template>
         </n-card>
       </el-col>
@@ -15,16 +19,12 @@
     <el-row type="flex" class="row-bg" justify="center">
         <el-col :xs="24" :md="16" :lg="12">
           <div class="ticket-box" v-if="favorites.length > 0">
-            <h3>Your Favorites</h3>
+            <h3>Favorites</h3>
             <p>Blasts from the past.</p>
             <n-ticket v-for="(favorite, index) in favorites"
               :index="index+1"
               :item="favorite"
               :key="favorites.indexOf(favorite)"/>
-          </div>
-          <div class="ticket-box" v-else>
-            <h3>Add Favorites</h3>
-            <p>Start adding favorites here.</p>
           </div>
         </el-col>
     </el-row>

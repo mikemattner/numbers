@@ -6,8 +6,8 @@
                 icon="el-icon-news"
                 isBlue>
                 <template v-slot:header>
-                    <h4>About</h4>
-                    <h1>This Web App</h1>
+                    <h4>About This</h4>
+                    <h1>Web App</h1>
                 </template>
                 <p>Numbers is a random ticket generator for Mega Millions. Generate tickets, favorite them for later &mdash; minutes of fun! 
                    This was built with Vue and is currently hosted on Netlify.</p>
