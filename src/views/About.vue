@@ -9,10 +9,8 @@
                     <h4>About</h4>
                     <h1>This Web App</h1>
                 </template>
-                <p>Numbers is a simple little random ticket generator for Mega Millions. I built it quickly with Vue, 
-                 using the Element UI library, and it is currently hosted on Netlify.</p>
-                <p>The real question is, &ldquo;is this entirely necessary?&rdquo; It is such a simple app and concept,
-                 with very few real technical challenges, it just seemed like a good way to get started with Vue development.</p>
+                <p>Numbers is a random ticket generator for Mega Millions. Generate tickets, favorite them for later &mdash; minutes of fun! 
+                   This was built with Vue and is currently hosted on Netlify.</p>
             </n-card>
             <h2>App Credits</h2>
             <dl>

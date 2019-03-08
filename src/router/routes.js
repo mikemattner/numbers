@@ -19,7 +19,7 @@ const routes = [
       component: Generate,
       meta: { 
         title: 'Generate', 
-        layout: 'default',
+        layout: 'navigation',
       },
     },
     {
@@ -28,7 +28,7 @@ const routes = [
       component: Favorites,
       meta: { 
         title: 'Favorites', 
-        layout: 'default',
+        layout: 'navigation',
       },
     },
     {
@@ -37,7 +37,7 @@ const routes = [
       component: About,
       meta: { 
         title: 'About', 
-        layout: 'default',
+        layout: 'navigation',
       },
     }
 ];

@@ -1,18 +1,18 @@
 <template>
   <div class="header-layout">
-    <HeaderBar />
+    <SectionHeader :key="$route.fullPath" />
     <slot />
     <MenuBar />
   </div>
 </template>
 
 <script>
-import HeaderBar from '@/components/HeaderBar.vue';
+import SectionHeader from '@/components/SectionHeader.vue';
 import MenuBar from '@/components/MenuBar.vue';
 
 export default {
   components: {
-    HeaderBar,
+    SectionHeader,
     MenuBar,
   },
 };

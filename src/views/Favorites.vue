@@ -14,13 +14,17 @@
     </el-row>
     <el-row type="flex" class="row-bg" justify="center">
         <el-col :xs="24" :md="16" :lg="12">
-          <div class="ticket-box">
+          <div class="ticket-box" v-if="favorites.length > 0">
             <h3>Your Favorites</h3>
             <p>Blasts from the past.</p>
             <n-ticket v-for="(favorite, index) in favorites"
               :index="index+1"
               :item="favorite"
               :key="favorites.indexOf(favorite)"/>
+          </div>
+          <div class="ticket-box" v-else>
+            <h3>Add Favorites</h3>
+            <p>Start adding favorites here.</p>
           </div>
         </el-col>
     </el-row>
