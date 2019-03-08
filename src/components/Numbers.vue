@@ -22,10 +22,10 @@
           <div class="ticket-box">
             <h3>Your Tickets</h3>
             <p>All randomly generated.</p>
-            <n-ticket v-for="(item, index) in tickets"
+            <n-ticket v-for="(ticket, index) in tickets"
               :index="index+1"
-              :item="item"
-              :key="index"/>
+              :item="ticket"
+              :key="tickets.indexOf(ticket)"/>
           </div>
         </el-col>
       </el-row>
@@ -82,7 +82,8 @@ export default {
           third: rand[2],
           fourth: rand[3],
           fifth: rand[4],
-          mega: mega
+          mega: mega,
+          liked: false
         });
       }
       this.showTickets = true;
@@ -112,7 +113,7 @@ export default {
           console.log(error);
         });
     },
-  }
+  },
 }
 </script>
 
