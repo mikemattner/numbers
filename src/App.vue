@@ -3,9 +3,7 @@
     <component :is="layout">
       <el-container>
         <el-main>
-          <transition name="fade" mode="out-in">
-            <router-view :key="$route.fullPath"/>
-          </transition>
+          <router-view :key="$route.fullPath"/>
         </el-main>
       </el-container>
     </component>
