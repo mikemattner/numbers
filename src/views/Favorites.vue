@@ -47,6 +47,7 @@ export default {
 @import '@/assets/scss/utils/_mixins.scss';
 
 .favorites {
+  padding-bottom: 6rem;
   h3{
     font-weight: 700;
     margin-bottom: 0;
