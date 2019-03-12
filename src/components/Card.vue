@@ -32,6 +32,7 @@ export default {
     margin-bottom: 2rem;
     box-shadow: 0 2px 15px rgba(0,0,0,0.1);
     text-align: center;
+    background-color: $white;
     
     h1,
     h2 {
