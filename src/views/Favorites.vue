@@ -10,8 +10,8 @@
             <h1>Tickets</h1>
           </template>
           <template  v-else v-slot:header>
-            <h4>No Favorites</h4>
-            <h1>Available</h1>
+            <h4>Your Favorites</h4>
+            <h1>None Added</h1>
           </template>
         </n-card>
       </el-col>

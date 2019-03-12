@@ -52,9 +52,11 @@ export default {
         color: $white;
 
         h1,
-        h2,
-        h4 {
+        h2 {
             color: $white;
+        }
+        h4 {
+            color: rgba($white, 0.5);
         }
         .illustrated {
             i {
