@@ -46,25 +46,11 @@ h1,h2,h3,h4 {
 
 .fade-enter-active,
 .fade-leave-active {
-  transition-duration: 0.25s;
-  transition-property: all;
-  transition-timing-function: ease-in-out;
+  transition: opacity .5s ease;
 }
 
 .fade-enter,
 .fade-leave-active {
-  opacity: 0;
-  transform: translate(0, -2em);
-}
-.simple-fade-enter-active,
-.simple-fade-leave-active {
-  transition-duration: 0.375s;
-  transition-property: all;
-  transition-timing-function: ease-in-out;
-}
-
-.simple-fade-enter,
-.simple-fade-leave-active {
   opacity: 0;
 }
 </style>

@@ -6,12 +6,7 @@
                 <i :class="{'el-icon-star-on': this.item.liked, 'el-icon-star-off': !this.item.liked}"
                     @click="like"></i>
             </li>
-            <li>{{ item.first }}</li>
-            <li>{{ item.second }}</li>
-            <li>{{ item.third }}</li>
-            <li>{{ item.fourth }}</li>
-            <li>{{ item.fifth }}</li>
-            <li>{{ item.mega }}</li>
+            <li v-for="(number, index) in item" v-if="index != 'liked'">{{ number }}</li>
         </ul>
     </div>
 </template>

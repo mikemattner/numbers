@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="generate">
     <Numbers />
   </div>
 </template>
@@ -8,7 +8,7 @@
 import Numbers from '@/components/Numbers.vue'
 
 export default {
-  name: 'home',
+  name: 'generate',
   components: {
     Numbers
   },

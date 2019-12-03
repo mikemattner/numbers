@@ -9,8 +9,8 @@ const routes = [
       name: 'home',
       component: Home,
       meta: {
-        title: 'Home', 
-        layout: 'default',
+        title: 'Numbers', 
+        layout: 'navigation',
       },
     },
     {
